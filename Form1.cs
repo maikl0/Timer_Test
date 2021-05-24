@@ -25,7 +25,7 @@ namespace Timer_Test
 
             zeitgeber1 = new Timer();                                    // Timer erzeugen
             zeitgeber1.Tick += new EventHandler(Testeintrag);            // nach jedem Tick die Methode Testeintrag aufrufen
-            zeitgeber1.Interval = 1000;                                  // Interval für Tick
+            zeitgeber1.Interval = 2000;                                  // Interval für Tick
         }
 
         private void button1_Click(object sender, EventArgs e)
