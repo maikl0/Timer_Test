@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Beschreibung:
+// Regelmäßig (gemäß Timereinstellungen) soll eine bestimmte Aktion ausgeführt werden.
+// Die Aktion ist unter "privat void Testeintrag" definiert.
+
 namespace Timer_Test
 {
     public partial class Form1 : Form
@@ -20,7 +24,7 @@ namespace Timer_Test
             InitializeComponent();
 
             zeitgeber1 = new Timer();                                    // Timer erzeugen
-            zeitgeber1.Tick += new EventHandler(Testeintrag);            //nach jedem Tick die Methode Testeintrag aufrufen
+            zeitgeber1.Tick += new EventHandler(Testeintrag);            // nach jedem Tick die Methode Testeintrag aufrufen
             zeitgeber1.Interval = 1000;                                  // Interval für Tick
         }
 
