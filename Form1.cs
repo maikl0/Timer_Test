@@ -23,14 +23,18 @@ namespace Timer_Test
         {
             InitializeComponent();
 
-            zeitgeber1 = new Timer();                                    // Timer erzeugen
-            zeitgeber1.Tick += new EventHandler(Testeintrag);            // nach jedem Tick die Methode Testeintrag aufrufen
-            zeitgeber1.Interval = 1000;                                  // Interval für Tick
+            textBox1.Text = "1000";
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int eingabe1 = Convert.ToInt32(textBox1.Text);
+            zeitgeber1 = new Timer();                                    // Timer erzeugen
+            zeitgeber1.Tick += new EventHandler(Testeintrag);            // nach jedem Tick die Methode Testeintrag aufrufen
+            zeitgeber1.Interval = eingabe1;                              // Interval für Tick
             zeitgeber1.Start();                                         // Timer (zeitgeber1) starten
+
         }
 
         private void Testeintrag(Object sender, EventArgs e)
@@ -48,5 +52,7 @@ namespace Timer_Test
         {
             Application.Exit();
         }
+
+       
     }
 }
