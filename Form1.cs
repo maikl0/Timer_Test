@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 // Beschreibung:
 // Regelmäßig (gemäß Timereinstellungen) soll eine bestimmte Aktion ausgeführt werden.
-// Die Aktion ist unter "privat void Testeintrag" definiert.
+// Die ausuführende Aktion nach jedem Tick ist unter "privat void Testeintrag" definiert.
 
 namespace Timer_Test
 {
