@@ -27,7 +27,7 @@ namespace Timer_Test
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             int eingabe1 = Convert.ToInt32(textBox1.Text);
             zeitgeber1 = new Timer();                                    // Timer erzeugen
@@ -43,12 +43,12 @@ namespace Timer_Test
             listBox1.Items.Add(text1);                                  // Text zur Listbox hinzufügen
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             zeitgeber1.Stop();                                          // Timer (zeitgeber1) beenden
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
